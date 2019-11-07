@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { PagesModule } from './modules/pages/pages.module';
+import { SharedComponentsModule } from './shared/_components/shared-components.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PagesModule } from './modules/pages/pages.module';
     NbThemeModule.forRoot({ name: 'default' }),
     NbLayoutModule,
     NbEvaIconsModule,
-    PagesModule
+    PagesModule,
+    SharedComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
