@@ -1,3 +1,17 @@
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.cv__app-navbar {
+  flex: 1 1 auto;;
+}
+
 .app-layout-column {
   padding-top: 0 !important;
 }

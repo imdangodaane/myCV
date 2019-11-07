@@ -33,6 +33,14 @@
     .cv__left-side__header {
       margin: 1rem;
       line-height: 1.5rem;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 70%;
+        margin-bottom: 1rem;
+        border-radius: 50%;
+      }
 
       .cv__name {
         font-weight: 600;

@@ -3,16 +3,19 @@ import { CommonModule } from '@angular/common';
 
 import { PagesRoutingModule } from './pages-routing.module';
 import { HomeComponent } from './home/home.component';
-import { NbCardModule, NbProgressBarModule } from '@nebular/theme';
+import { NbCardModule, NbProgressBarModule, NbTabsetModule } from '@nebular/theme';
+import { CertificationsComponent } from './certifications/certifications.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [HomeComponent, CertificationsComponent, ProjectsComponent],
   imports: [
     CommonModule,
     PagesRoutingModule,
     NbCardModule,
-    NbProgressBarModule
+    NbProgressBarModule,
+    NbTabsetModule,
   ]
 })
 export class PagesModule { }
