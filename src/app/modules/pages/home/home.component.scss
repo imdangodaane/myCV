@@ -2,6 +2,11 @@
   height: 10vh;
   background-color: white;
   margin: 1rem 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 1rem;
 }
 
 .home__component {
@@ -14,11 +19,16 @@
     background-color: rgba(0, 0, 0, 0.65);
     color: white;
     height: auto;
-    // padding: 1rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: stretch;
     align-items: stretch;
+    padding-bottom: 1rem;
+
+    span {
+      white-space: normal;
+      word-wrap: normal;
+    }
 
     .cv__left-side__header {
       margin: 1rem;
@@ -51,15 +61,62 @@
         padding-left: 1rem;
         line-height: 1.5rem;
       }
+      
+      .progress-bar {
+        margin-bottom: 0.5rem;
+      }
     }
   }
 
   .home__right-side {
-    flex: 1 1 auto;
+    flex: 1 1 70%;
     max-width: 70%;
     padding: 1rem;
     background-color: white;
     line-height: 1.5rem;
+
+    .cv__label {
+      padding-top: 0.25rem;
+      border-top: 3px solid #aaa;
+      border-bottom: 3px solid #aaa;
+      font-weight: 600;
+      margin: 0.5rem 0;
+    }
+
+    .cv__text {
+
+    }
+
+    .cv__content-body {
+      display: flex;
+      flex-flow: row nowrap;
+      line-height: 1.5rem;
+
+      .cv__content-body__time {
+        flex: 1 1 20%;
+        max-width: 20%;
+      }
+
+      .cv__content-body__detail {
+        flex: 1 1 80%;
+        max-width: 80%;
+        margin-left: 1rem;
+
+        .cv__content-body__label {
+          font-weight: 600;
+          line-height: 1.5rem;
+        }
+
+        .cv__content-body__info {
+          margin-left: 1rem;
+
+          li {
+            font-family: 'iCielAvantGardeGothic-Book';
+            line-height: 1.5rem;
+          }
+        }
+      }
+    }
   }
 }
 

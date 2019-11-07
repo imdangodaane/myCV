@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { PagesRoutingModule } from './pages-routing.module';
 import { HomeComponent } from './home/home.component';
-import { NbCardModule } from '@nebular/theme';
+import { NbCardModule, NbProgressBarModule } from '@nebular/theme';
 
 
 @NgModule({
@@ -11,7 +11,8 @@ import { NbCardModule } from '@nebular/theme';
   imports: [
     CommonModule,
     PagesRoutingModule,
-    NbCardModule
+    NbCardModule,
+    NbProgressBarModule
   ]
 })
 export class PagesModule { }
