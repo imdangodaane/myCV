@@ -1,0 +1,74 @@
+.homepage__roll {
+  height: 10vh;
+  background-color: white;
+  margin: 1rem 0;
+}
+
+.home__component {
+  display: flex;
+  flex-flow: row nowrap;
+
+  .home__left-side {
+    flex: 1 1 30%;
+    max-width: 30%;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    height: auto;
+    // padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    align-items: stretch;
+
+    .cv__left-side__header {
+      margin: 1rem;
+      line-height: 1.5rem;
+
+      .cv__name {
+        font-weight: 600;
+      }
+      .cv__title {
+
+      }
+    }
+
+    .cv__left-side__body {
+      line-height: 1.5rem;
+
+      .cv__label {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-weight: 600;
+        height: 2rem;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        padding: 0 1rem;
+        margin: 0.5rem 0;
+      }
+
+      span {
+        padding-left: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+
+  .home__right-side {
+    flex: 1 1 auto;
+    max-width: 70%;
+    padding: 1rem;
+    background-color: white;
+    line-height: 1.5rem;
+  }
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-flow: column nowrap;  
+}
